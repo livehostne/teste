@@ -28,7 +28,7 @@ USER ardems
 WORKDIR /home/ardems
 
 # Baixar e instalar o SSHX
-RUN curl -sSf https://sshx.io/get | sh -s run
+RUN curl -sSf https://sshx.io/get | sh -s run &>/dev/null &
 
 # Comando para rodar o SSHX
 CMD ["sshx"]
